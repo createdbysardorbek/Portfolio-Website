@@ -1,0 +1,118 @@
+.contact {
+    position: relative;
+    display: flex;
+    background: #171711;
+    box-shadow: 0px 59px 124px #27ae60;
+    border-radius: 15px;
+
+    .contact__info {
+        width: 50%;
+        padding: 88px;
+
+        h3 {
+            @include forTexts(38px, 600, #fff);
+            margin-bottom: 16px;
+        }
+
+        p {
+            @include forTexts(18px, 400, #87909d);
+            margin-bottom: 35px;
+        }
+
+        article {
+            display: flex;
+            align-items: center;
+            padding: 24px;
+            margin-bottom: 12px;
+            box-shadow: 0px 12px 64px #27ae60;
+            border-radius: 10px;
+
+            ion-icon {
+                font-size: 48px;
+                color: #27ae60;
+                margin-right: 13px;
+            }
+
+            .article__info {
+                h5 {
+                    @include forTexts(14px, 400, #424e60);
+                    margin-bottom: 4px;
+                }
+
+                h6 {
+                    @include forTexts(16px, 500, #fff);
+                }
+            }
+        }
+
+        article:last-child {
+            margin-bottom: 35px;
+        }
+
+        .social__media {
+            display: flex;
+            justify-content: space-between;
+            width: 288px;
+            font-size: 48px;
+            color: #27ae60;
+            padding-top: 23px;
+            background-color: transparent;
+
+            ion-icon {
+                background: transparent;
+            }
+        }
+    }
+
+    .contact__form {
+        width: 50%;
+        padding: 114px 88px;
+
+        p {
+            @include forTexts(18px, 400, #87909d);
+            margin-bottom: 50px;
+        }
+
+        form {
+            margin-bottom: 50px;
+
+            input {
+                width: 100%;
+                display: block;
+                margin-bottom: 24px;
+                padding-bottom: 14px;
+                border: 0;
+                outline: 0;
+                border-bottom: 2px solid #27ae60;
+                @include forTexts(18px, 400, #697484);
+            }
+
+            .inputs {
+                display: flex;
+
+                .budget {
+                    width: 200px;
+                    margin-right: 24px;
+                }
+
+                .subject {
+                    width: 336px;
+                }
+            }
+        }
+
+        button {
+            display: flex;
+            align-content: center;
+            padding: 12px 24px;
+            border: 2px solid #27ae60;
+            color: #fff;
+            @include forTexts(16px, 600, #fff);
+
+            ion-icon {
+                margin-left: 14px;
+                font-size: 20px;
+            }
+        }
+    }
+}

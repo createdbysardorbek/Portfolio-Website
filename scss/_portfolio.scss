@@ -1,0 +1,113 @@
+.portfolio {
+    margin-bottom: 150px;
+
+    .portfolio__info {
+        width: 100%;
+        padding-top: 100px;
+        margin-bottom: 70px;
+
+        h5 {
+            text-align: center;
+            @include forTexts(48px, 600, #fff);
+            margin-bottom: 24px;
+        }
+
+        p {
+            text-align: center;
+            width: 577px;
+            line-height: 24px;
+            @include forTexts(18px, 400, #87909d);
+            margin: 0 auto;
+        }
+    }
+
+    .portfolio__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
+        margin-bottom: 50px;
+
+        .cards {
+            width: 424px;
+            border: 1px solid #e6e8eb;
+            box-shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 2px 0px #fff;
+
+            picture {
+                width: 424px;
+                height: 248px;
+                overflow: hidden;
+                background-color: red;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 32px;
+                }
+            }
+
+            .card__info {
+                padding-left: 32px;
+                padding-bottom: 32px;
+
+                h5 {
+                    @include forTexts(12px, 500, #87909d);
+                    margin-bottom: 4px;
+                }
+
+                span {
+                    @include forTexts(18px, 600, #fff);
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    @include forTexts(14px, 400, #556070);
+                    margin-top: 12px;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    padding: 12px 24px;
+                    border: 2px solid #27ae60;
+
+                    a {
+                        @include forTexts(16px, 600, #fff);
+                        transition: 0.5s;
+                    }
+
+                    ion-icon {
+                        margin-left: 18px;
+                    }
+
+                    &:hover a {
+                        color: #27ae60;
+                    }
+                }
+            }
+        }
+    }
+
+    .more__button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        button {
+            padding: 12px 24px;
+            border: 2px solid #27ae60;
+            @include forTexts(16px, 600, #fff);
+            transition: .3s;
+
+            &:hover {
+                color: #27ae60;
+            }
+
+        }
+
+    }
+}

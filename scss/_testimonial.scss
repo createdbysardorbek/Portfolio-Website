@@ -1,0 +1,44 @@
+.testimonial {
+    margin-bottom: 150px;
+
+    .testimonial__info {
+        width: 577px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+
+        h4 {
+            text-align: center;
+            @include forTexts(48px, 600, #fff);
+            margin-bottom: 24px;
+        }
+
+        p {
+            @include forTexts(18px, 400, #87909d);
+            text-align: center;
+            line-break: 24px;
+        }
+    }
+
+    .testimonial__background {
+        width: 872px;
+        margin: 0 auto;
+
+        p {
+            text-align: center;
+            @include forTexts(18px, 500, #2b384c);
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            @include forTexts(18px, 500, #fff);
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        h6 {
+            @include forTexts(16px, 300, #fff);
+            text-align: center;
+        }
+    }
+}
